@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+    --naranja-pescar: #FD7202;
+    --azul-pescar: #1F288C;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------- Header --------------------- */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0px 15px;
+}
+
+.header__button{
+    position: relative;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: var(--naranja-pescar);
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .header__button:hover {
+    box-shadow: -2px 2px;
+  }
+  
+  .header__button span {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  .header__button svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: black;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .header__button:hover svg {
+    transform: translateX(0px);
+  }
+
+/* ---------------------- Hero --------------------- */
+
+.hero-section {
+    height: calc(100vh - 101px);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 30px;
+    background: linear-gradient(180deg, #ffffff90 0%,#fd720290 100%);;
+}
+
+.hero-section__h1 {
+    font-weight: 800;
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.hero-section__h2{
+    font-weight: 500;
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.hero-section__container-imgs{
+    display: flex;
+    align-items: center;
+    
+    width:45%
+}
+
+.hero-section__img-pescar{
+    height: 50px;
+    padding-right: 15px;
+
+
+    clip-path: circle(20px at 25px);
+}
+
+.hero-section__img-jp {
+    height: 25px;
+    border-left: black 2px solid;
+    padding-left: 20px;
+}
+
+/* ---------------------- About Us --------------------- */
+
+.sobre-nosotros-section {
+    height: 100vh;
+    background: linear-gradient(180deg, #fd720290 0%, #ffffff90 100%);
+}
+
+.sobre-nosotros-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.sobre-nosotros-section__h2 {
+    font-weight: 600;
+    font-size: 25px;
+
+    padding: 25px;
+}
