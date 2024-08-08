@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
 
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.ico">
+
     <title>Mentoring 2024 | Makro - Barracas</title>
 </head>
+
 <body>
-    
+
     <header id="hero" class="header">
         <img class="header__img" src="./images/logo-pescar-con-nombre.png" alt="Logo Pescar con texto">
-            <button class="header__button" onclick="scrollToSection('sobre-nosotros')">
-                <span>¿Quienes Somos?</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </button>
+        <button class="header__button" onclick="scrollToSection('sobre-nosotros')">
+            <span>¿Quienes Somos?</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
     </header>
 
     <section class="hero-section">
@@ -35,7 +39,22 @@
     <section id="sobre-nosotros" class="sobre-nosotros-section">
         <div class="sobre-nosotros-section__header">
             <h2 class="sobre-nosotros-section__h2"> ¿Quienes Somos? </h2>
-    
+
+            <button class="header__button" onclick="scrollToSection('orientadoras')">
+                <span>Next</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ? colaboracion Hector Rivero -->
+
+    <section id="orientadoras" class="section-orientadoras">
+        <div class="sobre-nosotros-section__header">
+            <h2 class="sobre-nosotros-section__h2"> Orientadoras: </h2>
             <button class="header__button" onclick="scrollToSection('hero')">
                 <span>Next</span>
                 <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -44,10 +63,33 @@
                 </svg>
             </button>
         </div>
+        <div class="container-orientadoras">
+            <div class="cards-o">
+                <img class="img-size" src="./images/orientadoras/andrea.jpg" alt="orientadora">
+                <h4>Andrea Martín</h4>
+                <p>Master en RRHH</p>
+            </div>
+            <div class="cards-o">
+                <img class="img-size" src="./images/orientadoras/mari.jpg" alt="orientadora">
+                <h4>Maria Bereterbide</h4>
+                <p>Lic. en Psicología</p>
+            </div>
+            <div class="cards-o">
+                <img class="img-size" src="./images/orientadoras/juli.jpg" alt="orientadora">
+                <h4>Juliana Gil</h4>
+                <p>Lic. en Psicología</p>
+            </div>
+        </div>
+        <div class="logos">
+            <img class="hero-section__img-pescar" src="./images/logo-pescar-img.jpg" alt="Logo Fundacion Pescar">
+            <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
+        </div>
 
     </section>
+
+    <!-- ? fin de la colaboracion Hector Rivero -->
+
     <script type="module" src="./main.js"></script>
 </body>
-</html>
 
-  
+</html>
