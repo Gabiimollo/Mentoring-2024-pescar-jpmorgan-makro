@@ -74,17 +74,24 @@ a {
     transform: translateX(0px);
 }
 
-/* ---------------------- Hero --------------------- */
 
+
+.fondo-dipo-hermana-1{
+    background: linear-gradient(180deg, #ffffff90 0%, #fd720290 100%);
+}
+
+.fondo-dipo-hermana-2{
+    background: linear-gradient(180deg, #fd720290 0%, #ffffff90 100%);
+}
+/* ---------------------- Hero --------------------- */
 .hero-section {
     height: calc(100vh - 101px);
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     padding-left: 30px;
-    background: linear-gradient(180deg, #ffffff90 0%, #fd720290 100%);
+    
     ;
 }
 
@@ -189,7 +196,32 @@ a {
     justify-content: center;
     align-items: center;
 }
+/*----------------- Pilares de la Formación --------------------------*/
+.section-pilares{
+    height: 100vh;   
+}
 
+.portada-pilares{
+    display: flex;
+    margin: 25vh;
+}
+
+.punto{
+    color: #00000000;
+}
+
+.pilares_de_la_Formacion_h2 {
+    font-size: 5vw;
+    color: var(--azul-pescar);
+    text-shadow: 2px 2px 4px #150f49;
+}
+
+.pilares_de_la_Formacion_img{
+    margin-left: 5vw;
+    width: 25vw;
+    height: auto;
+    
+}
 /* ? animaciones */
 
 @keyframes fade {
