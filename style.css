@@ -196,6 +196,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 /*----------------- Pilares de la Formación --------------------------*/
 .section-pilares{
     height: 100vh;   
@@ -222,6 +223,64 @@ a {
     height: auto;
     
 }
+
+/* ? primera diapositiva */
+
+.first-slide-section {
+    background: linear-gradient(180deg, #fd720290 0%, #ffffff90 100%);
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.container-first-slide {
+    height: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-first-slide h2{
+    color: var(--azul-pescar);
+    font-size: 2rem;
+}
+
+.first-slide-subtitle {
+    grid-column: 1 / 2; /* Coloca el contenido en la segunda columna (parte derecha) */
+    justify-self: end;
+    align-self: center;
+    padding-left: 50%;
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: var(--azul-pescar);
+}
+
+.first-01 p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.first-03 p {
+    width: 80%;
+}
+
+.first-01, .first-02, .first-03 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.first-slide-image{
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.first-slide-image img{
+    width: 60%;
+}
+
 /* ? animaciones */
 
 @keyframes fade {
