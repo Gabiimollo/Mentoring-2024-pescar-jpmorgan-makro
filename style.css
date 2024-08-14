@@ -194,7 +194,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    position: relative;
+    /* position: relative; */
     left: 60px;
 }
 
@@ -214,9 +214,6 @@ a {
     font-weight: bold;
     width: 85%;
 }
-
-.pil
-
 
 /* ? primera diapositiva */
 
