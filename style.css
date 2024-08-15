@@ -328,6 +328,103 @@ a {
     margin-top: 10px;
 }
 
+/* ? Capacitaciones Martin Gomez / Diapo 9 */
+
+.section-capacitaciones {
+    background: #ffffff90;
+    height: 100vh;
+    background-image: url('./images/elementos/decoracion.png');
+    background-repeat: no-repeat;
+    color: var(--azul-pescar);
+  }
+  
+  .capacitaciones_header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    align-items: center;
+  
+  }
+  .capacitaciones__h2 {
+    margin-left: 38vw;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .container-cards {
+    margin-left: 20vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
+  }
+  
+  .container-capacitaciones {
+    width: 260px;
+    height: 315px;
+    perspective: 900px;
+  }
+  
+  .card-m {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border-radius: 2rem;
+    background-image: url('./images/elementos/decoracion2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container-capacitaciones:hover > .card-m {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5);
+    backface-visibility: hidden;
+    background: #ffffff90;
+  }
+  
+  .front,
+  .back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .back {
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  
+  .back-heading,
+  .front-heading {
+    font-size: 28px;
+    font-weight: 650;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icono-card {
+    max-width: 100px;
+  }
+
+  /* ? Capacitaciones / Diapo 9 */
+
 /* ? animaciones */
 
 @keyframes fade {
