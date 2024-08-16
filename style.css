@@ -337,18 +337,24 @@ a {
     background-repeat: no-repeat;
     color: var(--azul-pescar);
   }
+
   
   .capacitaciones_header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-right: 15px;
     align-items: center;
   
   }
+  .capacitaciones_header button {
+    right: 2px;
+    position: absolute;
+  }
   .capacitaciones__h2 {
-    margin-left: 38vw;
+    /* margin-left: 35vw; */
     font-size: 3rem;
     font-weight: 900;
+    text-align: center;
   }
   
   .container-cards {
@@ -358,11 +364,12 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     place-content: center;
+    overflow: visible;
   }
   
   .container-capacitaciones {
-    width: 260px;
-    height: 315px;
+    width: 15vw;
+    height: 35vh;
     perspective: 900px;
   }
   
@@ -401,6 +408,7 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 20px;
     
   }
@@ -414,11 +422,7 @@ a {
     font-size: 28px;
     font-weight: 650;
   }
-  .logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .icono-card {
     max-width: 100px;
   }
