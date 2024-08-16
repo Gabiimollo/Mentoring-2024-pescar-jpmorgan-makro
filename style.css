@@ -183,6 +183,62 @@ a {
     align-items: center;
 }
 
+/*----------------- Centros --------------- */
+
+.centros_header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.img_adornoarriba {
+  height: 120px;
+}
+
+.h2_centros {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  color: blue;
+}
+
+.div_img_centros {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img_centros {
+  height: 300px;
+  width: 600px;
+  border-radius: 5px;
+}
+.centros_nombres {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 800;
+  color: blue;
+}
+
+.div_img_pescar-adorno {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 156px;
+}
+
+.img_pescar {
+  height: 150px;
+}
+
+.img_adornoabajo {
+  height: 120px;
+}
+
+
+
 /*----------------- Pilares de la Formación --------------------------*/
 .section-pilares{
     height: 100vh;   
