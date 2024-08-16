@@ -121,9 +121,82 @@ a {
     padding-left: 20px;
 }
 
-/* ---------------------- About Us --------------------- */
+/* ---------------------- Quienes somos? - Diapositiva 2 --------------------- */ 
 
 .sobre-nosotros-section {
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    background-image: url('./images/elementos/decoracion.png'), url('./images/elementos/decoracion2.png');
+    background-repeat: no-repeat;
+    background-size: 20%, 25%;
+    background-position: 0% 0%, 100% 100%;
+}
+
+/* Contenedor */
+.sobre-nosotros-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.sobre-nosotros-section__h2 {
+    font-weight: 600;
+    font-size: 25px;
+
+    padding: 25px;
+}
+
+.container-quienes-somos {
+    margin: 20px 340px 0px 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-somos__h2 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    color: var(--azul-pescar);
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.quienes-somos__barra {
+    background-color: var(--naranja-pescar);
+    border: 2px solid rgb(6, 6, 6);
+    border-bottom: none;
+
+    height: 19px;
+    width: 100%;
+}
+
+.__barra-icons {
+    width: 50px;
+    height: 15px;
+
+    margin: auto;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+
+    border: 2px solid rgb(6, 6, 6);
+    box-shadow: rgb(66, 66, 66) 10px 10px 0px 0px;
+}
+
+/* Lautaro Paz ----------------------------------------------------------------------------------- */
+
+/* ---------------------- About Us () --------------------- */
+
+/* .sobre-nosotros-section {
     height: 100vh;
 }
 
@@ -139,7 +212,7 @@ a {
     font-size: 25px;
 
     padding: 25px;
-}
+} */
 
 /* ? Orientadoras */
 
