@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="assets/css/blobz.min.css">
     <link rel="icon" type="image/png" href="./images/favicon/favicon.ico">
-
     <title>Mentoring 2024</title>
 </head>
-
 <body>
-
     <header id="hero" class="header">
         <img class="header__img" src="./images/logo-pescar-con-nombre.png" alt="Logo Pescar con texto">
         <button class="header__button" onclick="scrollToSection('sobre-nosotros')">
             <span>¿Quienes Somos?</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
         </button>
     </header>
 
-    <section class="hero-section fondo-dipo-hermana-1">
-        <h2 class="hero-section__h2">¡Bienvenidos!</h2>
+    <section class="hero-section">
+        <div class="hero-container-right">
+            <div class="tk-blob" style="--time: 20s; --amount: 5; --fill: #FD720299">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                    <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
+                </svg>
+            </div>
 
-        <h1 class="hero-section__h1">Mentoring 2024</h1>
+            <div class="tk-blob tk-blob-2" style="--time: 15s; --amount: -5; --fill: #1F288C99">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                  <path d="M389.3 42c39.8 40.8 47.5 116.3 21.3 165.4-26.1 49.1-86 71.8-145.9 104.3-59.8 32.5-119.6 74.8-168.9 63.4C46.5 363.7 7.6 298.5 1 235.7-5.5 173 20.3 112.5 59.8 71.9 99.3 31.2 152.4 10.2 215 2.8 277.5-4.7 349.5 1.2 389.3 42z"></path>
+                </svg>
+            </div>
 
-        <div class="hero-section__container-imgs">
-            <img class="hero-section__img-pescar" src="./images/logo-pescar-img.jpg" alt="Logo Fundacion Pescar">
-            <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
+            <h2 class="hero-section__h2">¡Bienvenidos!</h2>
+
+            <h1 class="hero-section__h1">Mentoring 2024</h1>
+
+            <div class="hero-section__container-imgs">
+                <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
+                <img class="hero-section__img-pescar" src="./images/logo-pescar-img.jpg" alt="Logo Fundacion Pescar">
+            </div>
         </div>
+        
+        <img class="image-hero" src="./images/mentor.svg" alt="">
     </section>
 
     <!-- ? colaboracion Lautaro Paz - Diapositiva 2 -->
     
-    <section id="sobre-nosotros" class="sobre-nosotros-section">
-        <div class="sobre-nosotros-section__header">
+    <section id="sobre-nosotros" class="section">
+        <div class="header">
             <h2 class="sobre-nosotros-section__h2"></h2>
-    
             <button class="header__button" onclick="scrollToSection('orientadoras')">
-                <span>Next</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
+                <span> Nuestras Orientadoras </span>
             </button>
-    
         </div>
     
         <div class="container-quienes-somos">
@@ -58,8 +59,8 @@
             <div class="quienes-somos__barra">
                 <img class="__barra-icons" src="./images/elementos/decoracion-video.png" alt="Íconos" />
             </div>
-            <video poster="./images/elementos/minuatura-video.png" controls>
-                <source src="./video/quienes-somos-video.mp4" type="video/mp4">
+            <video loop poster="./images/elementos/minuatura-video.png" controls>
+                <source src="./video/presentacionMentores.mp4" type="video/mp4">
                 Su navegador no puede reproducir este formato de video
             </video>
         </div>
@@ -68,17 +69,15 @@
 
     <!-- ? colaboracion Hector Rivero -->
 
-    <section id="orientadoras" class="section-orientadoras">
-        <div class="sobre-nosotros-section__header">
-            <h2 class="sobre-nosotros-section__h2"> Orientadoras: </h2>
-            <button class="header__button" onclick="scrollToSection('centros')">
-                <span>Next</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </button>
-        </div>
+    <section id="orientadoras" class="section">
+        <section id="sobre-nosotros" class="section">
+            <div class="header">
+                <h2 class="sobre-nosotros-section__h2"></h2>
+                <button class="header__button" onclick="scrollToSection('centros')">
+                    <span> Centros </span>
+                </button>
+            </div>
+        <h2 class="quienes-somos__h2"> Nuestras Orientadoras: </h2>
         <div class="container-orientadoras">
             <div class="cards-o">
                 <img class="img-size" src="./images/orientadoras/andrea.jpg" alt="orientadora">
@@ -100,55 +99,49 @@
             <img class="hero-section__img-pescar" src="./images/logo-pescar-img.jpg" alt="Logo Fundacion Pescar">
             <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
         </div>
-
     </section>
 
     <!-- ? fin de la colaboracion Hector Rivero -->
 
     <!-- ? colaboracion Diego Bassani-->
 
-    <section id="centros" class="centros_section">
-        <div class="centros_header">
-            <img class="img_adornoarriba" src="images/centros/imgadornoarriba.jpg" alt="adornoarriba">
-            <h2 class="h2_centros"> Centros</h2>
-        <button class="header__button" onclick="scrollToSection('pilares_de_la_formacion')">
-            <span>Next</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-        </button>
+    <section id="centros" class="section">
+        <div class="header">
+            <h2 class="sobre-nosotros-section__h2"></h2>
+            <button class="header__button" onclick="scrollToSection('pilares_de_la_formacion')">
+                <span> Pilares de la Formación </span>
+            </button>
+        </div>
 
-    </div>
-    </div>
+        <h2 class="quienes-somos__h2"> Los Equipos </h2>
     
-        <div class="div_img_centros">
-            <img class="img_centros" src="./images/centros/marko.png " alt="alumnos-makro-olivos">
-            <img class="img_centros" src="./images/centros/barracas.png" alt="alumnos-barracas">
-        </div>
-        <div class="centros_nombres">
-            <p>Olivos</p>
-            <p>Barracas</p>
-        </div>
-            <div class="div_img_pescar-adorno">
-                <img class="img_pescar" src="./images/centros/logopescar.jpeg" alt="logo-pescar">
-                <img class="img_adornoabajo" src="./images/centros/imgadornoabajo.png" alt="adorno abajo">
+        <div class="container-orientadoras">
+            <div class="cards-o">
+                <img class="img_centros" src="./images/centros/makro.png" alt="centro-olivos">
+                <h4 class="centros_h4"> Olivos</h4>
             </div>
+            <div class="cards-o">
+                <img class="img_centros" src="./images/centros/Pescar2.jpeg" alt="centro-barracas">
+                <h4 class="centros_h4"> Barracas </h4>
+            </div>
+        </div>
+
+        <div class="logos">
+            <img class="hero-section__img-pescar" src="./images/logo-pescar-img.jpg" alt="Logo Fundacion Pescar">
+            <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
+        </div>
+        
     </section>   
 
 <!-- ? fin de la colaboracion Diego Bassani-->
 
     <!-- ? colaboracion Lucila Portillo -->
 
-    <section id="pilares_de_la_formacion" class="section-pilares fondo-dipo-hermana-1">
-        <div class="sobre-nosotros-section__header">
-            <h2 class="sobre-nosotros-section__h2 punto"></h2>
-            <button class="header__button margintop" onclick="scrollToSection('first-slide')">
-                <span>Next</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
+    <section id="pilares_de_la_formacion" class="section">
+        <div class="header">
+            <h2 class="sobre-nosotros-section__h2"></h2>
+            <button class="header__button" onclick="scrollToSection('first-slide')">
+                <span> 1° Pilar </span>
             </button>
         </div>
         <div class="container-pilares">
@@ -157,9 +150,7 @@
                 <h2>Pilares de la Formacion</h2>
             </div>
    
-            <div class="pilares-right">
-                <img src="./images/pilares/pilares_de_la_formacion.png" alt="pilares_de_la_formacion">
-            </div>
+            <img class="image-hero image-pilares" src="./images/pilares/team-work-2-86.svg" alt="">
 
         </div>   
     </section>
@@ -167,56 +158,36 @@
         <!-- ? fin de la colaboracion Lucila Portillo -->
 
 
-<!-- ! SANTIAGO FRIEDRICH COLABORACION -->
+<!-- ! SANTIAGO FRIEDRICH COLABORACION -->        
 
-    <section id="first-slide" class="first-slide-section">
-        <div class="sobre-nosotros-section__header">
-            <h2 class="sobre-nosotros-section__h2"> 01 </h2>
-
+    <section id="first-slide" class="section-educacionit">
+        <div class="header">
+            <h2 class="sobre-nosotros-section__h2"></h2>
             <button class="header__button" onclick="scrollToSection('educacionit')">
-                <span>Next</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
+                <span> 2° Pilar </span>
             </button>
         </div>
-        <div class="container-first-slide">
-            <div class="first-slide-subtitle">
-                <div class="first-01">
-                    <p>01</p>
-                </div>
-
-                <div class="first-02">
-                    <h2>J.P MORGAN</h2>
-                </div>
-
-                <div class="first-03">
-                <p>Seminarios virtuales y presenciales “a day in the life of...”  con grandes talentos de ambas ogranizaciones.</p>
-                </div>    
-
+        <div class="container-educacionit">
+            <div class="container-text">
+                <h2>01</h2>
+                <h2>JP MORGAN</h2>
+                <p>Seminarios virtuales y presenciales <strong>“A Day in the Life of... ” </strong>con grandes talentos de ambas ogranizaciones.</p>
             </div>
-            
-            <div class="first-slide-image">
-                <img src="./images/diapos/diapositiva_01.png" alt="diapositiva_01">
+            <div class="container-img">
+                <img class="img-elm" src="./images/diapos/diapositiva_01.png" alt="educacion">
             </div>
-
         </div>
     </section>
 
-    <!-- ! fin de la colaboracion SANTIAGO FRIEDRICH -->
+<!-- ! fin de la colaboracion SANTIAGO FRIEDRICH -->
 
 <!-- ? colaboracion Oriana / Diapositiva 7 -->
 
 <section id="educacionit" class="section-educacionit">
-    <div class="sobre-nosotros-section__header">
+    <div class="header">
         <h2 class="sobre-nosotros-section__h2"></h2>
-        <button class="header__button margintop" onclick="scrollToSection('diapo8')">
-            <span>Next</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
+        <button class="header__button" onclick="scrollToSection('diapo8')">
+            <span> 3° Pilar </span>
         </button>
     </div>
     <div class="container-educacionit">
@@ -237,14 +208,10 @@
 <!-- ! Colaboracion Fiorella Terranova / Diapositiva 8-->
 
 <section id="diapo8" class="section-educacionit">
-    <div class="sobre-nosotros-section__header">
+    <div class="header">
         <h2 class="sobre-nosotros-section__h2"></h2>
-        <button class="header__button margintop" onclick="scrollToSection('capacitaciones')">
-            <span>Next</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
+        <button class="header__button" onclick="scrollToSection('capacitaciones')">
+            <span> Capacitaciones </span>
         </button>
     </div>
     <div class="container-educacionit">
@@ -264,16 +231,14 @@
 <!-- ? Colaboracion Martin Gomez / Diapositiva 9  -->
 
 <section id="capacitaciones" class="section-capacitaciones">
-    <div class="capacitaciones_header">
-        <h2 class="capacitaciones__h2"> Capacitaciones </h2>
-        <button class="header__button" onclick="scrollToSection('hero')">
-            <span>Next</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
+    <div class="header">
+        <h2 class="sobre-nosotros-section__h2"></h2>
+        <button class="header__button" onclick="scrollToSection('muchas-gracias')">
+            <span> ¡Muchas Gracias! </span>
         </button>
     </div>
+
+    <h2 class="quienes-somos__h2 capacitaciones-h2"> Nuestras Capacitaciones </h2>
 
     <div class="container-cards">
         <div class="container-capacitaciones">
@@ -319,13 +284,38 @@
                     <p class="back-heading">Otras Capacitaciones</p>
                 </div>
                 <div class="front">
-                    <img src="./images/capacitaciones/coursera.svg" alt="">
-                    <img class="front-heading icono-card" src="https://cdn-icons-png.flaticon.com/256/300/300221.png" alt="icono-google">
+                    <img style="padding: 0px 20px" src="./images/capacitaciones/coursera.svg" alt="">
+                    <img style="padding: 0px 10px" class="front-heading icono-card" src="https://cdn-icons-png.flaticon.com/256/300/300221.png" alt="icono-google">
                     
                 </div>
             </div>
         </div>  
     </div>
+</section>
+
+<section class="hero-section">
+    <div class="thanks-container">
+        <div class="tk-blob" style="--time: 20s; --amount: 5; --fill: #FD720299">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
+            </svg>
+        </div>
+
+        <div class="tk-blob tk-blob-2" style="--time: 15s; --amount: -5; --fill: #1F288C99">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+              <path d="M389.3 42c39.8 40.8 47.5 116.3 21.3 165.4-26.1 49.1-86 71.8-145.9 104.3-59.8 32.5-119.6 74.8-168.9 63.4C46.5 363.7 7.6 298.5 1 235.7-5.5 173 20.3 112.5 59.8 71.9 99.3 31.2 152.4 10.2 215 2.8 277.5-4.7 349.5 1.2 389.3 42z"></path>
+            </svg>
+        </div>
+
+        <h1 class="hero-section__h1">¡Muchas Gracias!</h1>
+        
+        <h2 class="hero-section__h2">Nada de esto seria posible sin Ud.</h2>
+
+        <img class="hero-section__img-jp" src="./images/logo-jpmorgan.svg" alt="Logo JP Morgan Argentina">
+
+    </div>
+    
+    <img class="image-hero image-thanks" src="./images/team-building-98.svg" alt="">
 </section>
 
 <!-- ? Fin colaboracion de Martin Gomez / Diapositiva 9 -->

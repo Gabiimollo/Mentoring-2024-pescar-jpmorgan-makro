@@ -23,20 +23,23 @@ a {
 }
 
 /* ---------------------- Header --------------------- */
-
 .header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px 0px 15px;
+    height: 80px;
+    padding: 5px 15px 0px 15px;
+}
+
+.header__img {
+    height: 80px;
 }
 
 .header__button {
-    position: relative;
+    align-self: center;
     padding: 10px 20px;
-    transition: all 0.2s ease;
     cursor: pointer;
     border: 1px solid black;
     border-radius: 50px;
@@ -57,78 +60,80 @@ a {
     color: #000000;
 }
 
-.header__button svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: black;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.header__button:hover svg {
-    transform: translateX(0px);
-}
-
 /* ---------------------- Hero --------------------- */
 .hero-section {
-    height: calc(100vh - 101px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px 0px 200px;
+}
+
+.hero-container-right{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
-    padding-left: 30px;
-    
-    ;
+    align-items: start;
+    margin-top: -100px;
+    width: 50%;
 }
 
 .hero-section__h1 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 60px;
 
     margin-bottom: 20px;
 }
 
 .hero-section__h2 {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 35px;
 
     margin-bottom: 20px;
 }
 
 .hero-section__container-imgs {
+    width: 100%;
     display: flex;
     align-items: center;
-
-    width: 45%
+    justify-content: start;
 }
 
 .hero-section__img-pescar {
-    height: 50px;
-    padding-right: 15px;
+    height: 80px;
+    clip-path: circle(30px at 41px);
+    border-left: black 2px solid;
+}
 
+.tk-blob{
+    width: 25%;
+    position: absolute;
+    left: 90px;
+    z-index: -1;
+}
 
-    clip-path: circle(20px at 25px);
+.tk-blob-2 {
+    width: 25%;
+    position: absolute;
+    left: 320px;
+    z-index: -2;
 }
 
 .hero-section__img-jp {
-    height: 25px;
-    border-left: black 2px solid;
-    padding-left: 20px;
+    height: 50px;
+    padding-top: 10px;
+    margin-right: 20px;
 }
 
+.image-hero{
+    width: 45%;
+    margin-top: -100px;
+}
 /* ---------------------- Quienes somos? - Diapositiva 2 --------------------- */ 
 
-.sobre-nosotros-section {
+.section {
     height: 100vh;
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     background-image: url('./images/elementos/decoracion.png'), url('./images/elementos/decoracion2.png');
     background-repeat: no-repeat;
     background-size: 20%, 25%;
@@ -136,12 +141,7 @@ a {
 }
 
 /* Contenedor */
-.sobre-nosotros-section__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
-}
+
 
 .sobre-nosotros-section__h2 {
     font-weight: 600;
@@ -157,6 +157,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -40px;
 }
 
 .quienes-somos__h2 {
@@ -192,33 +194,8 @@ video {
     box-shadow: rgb(66, 66, 66) 10px 10px 0px 0px;
 }
 
-/* Lautaro Paz ----------------------------------------------------------------------------------- */
-
-/* ---------------------- About Us () --------------------- */
-
-/* .sobre-nosotros-section {
-    height: 100vh;
-}
-
-.sobre-nosotros-section__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
-}
-
-.sobre-nosotros-section__h2 {
-    font-weight: 600;
-    font-size: 25px;
-
-    padding: 25px;
-} */
 
 /* ? Orientadoras */
-
-.section-orientadoras {
-    height: 100vh;
-}
 
 .container-orientadoras {
     height: 70%;
@@ -254,68 +231,25 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -30px;
 }
 
 /*----------------- Centros --------------- */
 
-.centros_header {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 15px;
-}
-
-.img_adornoarriba {
-  height: 120px;
-}
-
-.h2_centros {
-  padding-top: 20px;
-  font-size: 40px;
-  font-weight: 800;
-  color: blue;
-}
-
-.div_img_centros {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .img_centros {
   height: 300px;
   width: 600px;
-  border-radius: 5px;
-}
-.centros_nombres {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  margin-top: 30px;
-  font-size: 40px;
-  font-weight: 800;
-  color: blue;
+  border-radius: 30px;
+  margin: 0px -40px;
 }
 
-.div_img_pescar-adorno {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  height: 156px;
+.centros_h4 {
+    padding-top: 15px;
+    font-size: 25px;
 }
-
-.img_pescar {
-  height: 150px;
-}
-
-.img_adornoabajo {
-  height: 120px;
-}
-
-
 
 /*----------------- Pilares de la Formación --------------------------*/
-.section-pilares{
-    height: 100vh;   
-}
 
 .container-pilares{
     height: 70%;
@@ -339,68 +273,16 @@ video {
 
 .pilares-left h2 {
     color: var(--azul-pescar);
-    font-size: 3rem;
-    font-weight: bold;
-    width: 85%;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-/* ? primera diapositiva */
-
-.first-slide-section {
-    height: 100vh;
+.image-pilares{
+    width: 35%;
+    margin-top: 50px;
 }
 
-.container-first-slide {
-    height: 70%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.container-first-slide h2{
-    color: var(--azul-pescar);
-    font-size: 2rem;
-}
-
-.first-slide-subtitle {
-    grid-column: 1 / 2; /* Coloca el contenido en la segunda columna (parte derecha) */
-    justify-self: end;
-    align-self: center;
-    padding-left: 50%;
-    text-align: left; /* Alinea el texto a la izquierda */
-    color: var(--azul-pescar);
-}
-
-.first-01 p {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.first-03 p {
-    width: 80%;
-}
-
-.first-01, .first-02, .first-03 {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-
-.first-slide-image{
-    grid-column: 2 / 3;
-    justify-self: start;
-    align-self: center;
-    display: flex;
-    align-items: center;
-}
-
-.first-slide-image img{
-    width: 60%;
-}
-
-
-/* ---------------------- Educacion IT / Diapositiva 7 --------------------- */
-
-
+/* ---------------------- Diapositivas 6 7 8 --------------------- */
 
 .section-educacionit {
     background-color: #ffffff90;
@@ -487,12 +369,12 @@ video {
   }
   
   .container-cards {
-    margin-left: 20vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    place-content: center;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     overflow: visible;
   }
   
@@ -503,7 +385,7 @@ video {
   }
   
   .card-m {
-    height: 100%;
+    height: 120%;
     width: 100%;
     background-color: aliceblue;
     position: relative;
@@ -554,6 +436,30 @@ video {
 
   .icono-card {
     max-width: 100px;
+  }
+
+  .capacitaciones-h2{
+    margin-bottom: -20px;
+  }
+
+  .thanks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 70px;
+  }
+
+  .image-thanks {
+    width: 40%;
+  }
+
+  .tk-blob-3{
+    width: 40%;
+    position: absolute;
+    left: 90px;
+    z-index: -1;
   }
 
   /* ? Capacitaciones / Diapo 9 */
