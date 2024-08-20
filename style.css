@@ -344,7 +344,10 @@ video {
 .section-capacitaciones {
     background: #ffffff90;
     height: 100vh;
-    background-image: url('./images/elementos/decoracion.png');
+    background: url('./images/elementos/decoracion.png'),
+    url("https://www.jpmorgan.com/content/dam/logos-global/logo-jpm-brown.svg") center center,
+    url("./images/elementos/decoracion2.png") bottom right;
+    background-size: 30rem;
     background-repeat: no-repeat;
     color: var(--azul-pescar);
   }
