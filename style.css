@@ -448,11 +448,12 @@ video {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-bottom: 70px;
+    margin-top: 50px;
   }
 
   .image-thanks {
     width: 40%;
+    margin-top: 50px;
   }
 
   .tk-blob-3{
