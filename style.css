@@ -288,9 +288,6 @@ video {
     background-color: #ffffff90;
     height: 100vh;
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     background-image: url('./images/elementos/decoracion.png'), url('./images/elementos/decoracion2.png');
     background-repeat: no-repeat;
     background-size: 20%, 25%;
@@ -344,11 +341,10 @@ video {
 .section-capacitaciones {
     background: #ffffff90;
     height: 100vh;
-    background: url('./images/elementos/decoracion.png'),
-    url("https://www.jpmorgan.com/content/dam/logos-global/logo-jpm-brown.svg") center center,
-    url("./images/elementos/decoracion2.png") bottom right;
-    background-size: 30rem;
+    background-image: url('./images/elementos/decoracion.png'), url('./images/elementos/decoracion2.png');
     background-repeat: no-repeat;
+    background-size: 20%, 25%;
+    background-position: 0% 0%, 100% 100%;
     color: var(--azul-pescar);
   }
 
