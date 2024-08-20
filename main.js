@@ -15,3 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sweetScroll.to(`#${sectionId}`);
   };
 });
+const video = document.getElementById('video').volume = 0.05;
+
+console.dir(video)
