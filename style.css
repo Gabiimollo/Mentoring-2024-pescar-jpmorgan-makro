@@ -140,9 +140,6 @@ a {
     background-position: 0% 0%, 100% 100%;
 }
 
-/* Contenedor */
-
-
 .sobre-nosotros-section__h2 {
     font-weight: 600;
     font-size: 25px;
@@ -151,22 +148,30 @@ a {
 }
 
 .container-quienes-somos {
-    margin: 20px 340px 0px 340px;
+    margin: 20px 345px 0px 345px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -40px;
+    bottom: 0px;
+}
+
+@media screen and (min-height: 830px) {
+    .container-quienes-somos {
+        position: relative;
+        bottom: -30px;
+    }
+  
 }
 
 .quienes-somos__h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     color: var(--azul-pescar);
-    font-size: 1.9rem;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -190,8 +195,10 @@ video {
     height: 100%;
     width: 100%;
 
+    border-radius: 0px 0px 10px 10px;
     border: 2px solid rgb(6, 6, 6);
     box-shadow: rgb(66, 66, 66) 10px 10px 0px 0px;
+
 }
 
 
@@ -238,7 +245,7 @@ video {
 /*----------------- Centros --------------- */
 
 .img_centros {
-  height: 300px;
+  height: 320px;
   width: 600px;
   border-radius: 30px;
   margin: 0px -40px;

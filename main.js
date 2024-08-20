@@ -1,5 +1,9 @@
 import './style.css'
 import SweetScroll from 'sweet-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 document.addEventListener('DOMContentLoaded', () => {
   const sweetScroll = new SweetScroll({
